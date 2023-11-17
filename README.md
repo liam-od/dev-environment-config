@@ -21,4 +21,29 @@ In `.zshrc`
 Bind `ctrl-space` to accept completion  
 `bindkey '^ ' autosuggest-accept`  
 
+# Build essential
+`sudo apt-get install build-essential`  
+for Make and some other libs  
+
+# Rip grep
+`sudo apt-get install ripgrep`  
+required for telescope.nvim
+
+# NVM
+Use NVM to install NPM and node.  
+https://github.com/nvm-sh/nvm    
+`nvm install v20.9.0` (or whatever is lts)  
+
+# Unzip
+`sudo apt install unzip`
+
+# Python stuff
+`sudo apt install python3-pip`  
+`sudo apt install python3-venv`  
+
+# Neovim
+https://github.com/neovim/neovim/wiki/Installing-Neovim  
+Then move across the .config/nvim and run nvim.
+
+
 
