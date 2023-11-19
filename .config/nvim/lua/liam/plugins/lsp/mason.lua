@@ -32,6 +32,7 @@ return {
         "isort",
         "stylua",
         "flake8",
+        "black",
       },
     })
   end,

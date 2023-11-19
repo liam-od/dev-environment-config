@@ -6,7 +6,7 @@ return {
 
     conform.setup({
       formatters_by_ft = {
-        python = { "isort" }, -- removed black
+        python = { "isort" },
         lua = { "stylua" },
       },
       format_on_save = {
@@ -15,8 +15,9 @@ return {
         timeout_ms = 500,
       },
     })
-    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+    vim.keymap.set({ "x" }, "<leader>mp", function()
       conform.format({
+        formatters = { "black" },
         lsp_fallback = true,
         aync = false,
         timeout_ms = 500,
