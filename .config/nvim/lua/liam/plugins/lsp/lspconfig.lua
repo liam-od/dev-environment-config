@@ -57,6 +57,15 @@ return {
 
       opts.desc = "Restart LSP"
       keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+      vim.diagnostic.config({
+        virtual_text = false,
+        signs = true,
+        float = { border = "single" },
+      })
+
+      vim.o.updatetime = 250
+      vim.cmd([[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
     end
 
     -- used to enable autocompletion (assign to every lsp server config)
