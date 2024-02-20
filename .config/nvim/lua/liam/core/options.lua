@@ -20,6 +20,9 @@ opt.smartcase = true
 -- cursor line
 opt.cursorline = true
 
+-- lines
+opt.colorcolumn = { "72", "79" }
+
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
